@@ -50,3 +50,61 @@
   font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
 }
+.toast-message {
+  position: fixed;
+  z-index: 999;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgb(19, 201, 110);
+  color: #fff;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+  padding: 1rem 4rem 1rem 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
+}
+.toast-message-slide-in {
+  animation: toast-animation-in 0.5s ease-in;
+}
+
+.toast-message-slide-out {
+  animation: toast-animation-out 0.5s ease-in;
+}
+
+@keyframes toast-animation-in {
+  from {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes toast-animation-out {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+}
+.span-move {
+  background-color: white;
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  transform: translateY(50);
+  display: block;
+  width: 35px;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 5px;
+}
